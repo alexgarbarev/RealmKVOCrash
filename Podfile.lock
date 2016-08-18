@@ -1,0 +1,17 @@
+PODS:
+  - MBFaker (0.1.2)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+
+DEPENDENCIES:
+  - MBFaker
+  - Realm
+
+SPEC CHECKSUMS:
+  MBFaker: 856baf3a7153a474506114b1694c57b3bbeafbda
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+
+PODFILE CHECKSUM: 2c9ee1b1eae4dd27f0eda999b140e9496e8c5205
+
+COCOAPODS: 1.0.1
