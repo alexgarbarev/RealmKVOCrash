@@ -5,19 +5,19 @@
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrashTests/RealmCrashTests.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrashTests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/RealmCrash/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/PersonCell.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/Person.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/AppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/Person.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RealmCrash/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/RealmCrash/PersonCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/ViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/RealmCrash/AppDelegate.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RealmCrash/PersonCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrash/Base.lproj/Main.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RealmCrash/AppDelegate.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrashUITests/RealmCrashUITests.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RealmCrashUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/MBFakerLorem.h" isTestSource="false" />
@@ -43,13 +43,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/MBFakerAddress.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/scanner.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/parser.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/api.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/loader.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/reader.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/yaml_private.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/writer.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/emitter.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/dumper.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/src/api.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/config.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/yaml-0.1.3/include/yaml.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/MBFaker/MBFaker/MBFakerAddress.h" isTestSource="false" />
@@ -60,10 +60,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Realm/Realm-prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashUITests/Pods-RealmCrashUITests.release.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashUITests/Pods-RealmCrashUITests-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashUITests/Pods-RealmCrashUITests-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashUITests/Pods-RealmCrashUITests-acknowledgements.markdown" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashUITests/Pods-RealmCrashUITests-acknowledgements.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashUITests/Pods-RealmCrashUITests-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashUITests/Pods-RealmCrashUITests-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashUITests/Pods-RealmCrashUITests.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashUITests/Pods-RealmCrashUITests-resources.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashTests/Pods-RealmCrashTests-acknowledgements.markdown" isTestSource="false" />
@@ -74,12 +74,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashTests/Pods-RealmCrashTests-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrashTests/Pods-RealmCrashTests-resources.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash-acknowledgements.markdown" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash-acknowledgements.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash.release.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-RealmCrash/Pods-RealmCrash-resources.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBFaker/MBFaker.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBFaker/MBFaker-prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/MBFaker/MBFaker-dummy.m" isTestSource="false" />
@@ -114,44 +114,44 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/include/RLMListBase.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/core/librealm-ios.a" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMSwiftSupport.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealm.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMProperty.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMPredicateUtil.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/list.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/shared_realm.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/realm_coordinator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/collection_notifier.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/apple/weak_realm_notifier.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/apple/external_commit_helper.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/list_notifier.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/transact_log_handler.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/results_notifier.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/apple/weak_realm_notifier.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/apple/external_commit_helper.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/impl/collection_change_builder.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/object_store.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/util/format.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/schema.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/collection_notifications.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/object_schema.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/results.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/object_store.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/ObjectStore/index_set.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObservation.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMArrayLinkView.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMMigration.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMUtil.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealmUtil.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealmConfiguration.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObjectStore.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObjectBase.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMProperty.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMArray.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealmUtil.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMUtil.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObjectStore.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMAccessor.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObjectBase.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealm.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMCollection.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMUpdateChecker.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMAnalytics.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMCollection.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMOptionalBase.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMListBase.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMRealmConfiguration.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObject.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMConstants.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMQueryUtil.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMAccessor.mm" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMListBase.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObservation.mm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMOptionalBase.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMSchema.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMResults.mm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Realm/Realm/RLMObjectSchema.mm" isTestSource="false" />

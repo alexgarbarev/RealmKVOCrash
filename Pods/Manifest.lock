@@ -6,12 +6,23 @@ PODS:
 
 DEPENDENCIES:
   - MBFaker
-  - Realm
+  - Realm (from `https://github.com/realm/realm-cocoa.git`)
+
+EXTERNAL SOURCES:
+  Realm:
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  Realm:
+    :commit: b5293509170a477bea747f3b02153d033a5f118f
+    :git: https://github.com/realm/realm-cocoa.git
+    :submodules: true
 
 SPEC CHECKSUMS:
   MBFaker: 856baf3a7153a474506114b1694c57b3bbeafbda
-  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  Realm: 2948cfa3a05b7acc446abc4c124d443df646c8de
 
-PODFILE CHECKSUM: 2c9ee1b1eae4dd27f0eda999b140e9496e8c5205
+PODFILE CHECKSUM: cfb5fbfe0cefe1aee4f3136999ec04cf4da5b4c3
 
 COCOAPODS: 1.0.1

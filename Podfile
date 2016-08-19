@@ -5,9 +5,11 @@ target 'RealmCrash' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
+  
+
   # Pods for RealmCrash
 
-  pod 'Realm'
+  pod 'Realm', :git => 'https://github.com/realm/realm-cocoa.git', submodules: true
   pod 'MBFaker'
 
   target 'RealmCrashTests' do
