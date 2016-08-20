@@ -133,10 +133,10 @@
 				2DBA1A9D908470A02B2EDB8E /* Main.storyboard */,
 				2DBA1523536E7010323C26A7 /* ViewController.h */,
 				2DBA11D7A6531469FFBDF399 /* ViewController.m */,
-				2DBA1984FF44F4C4BE82924A /* Person.m */,
 				2DBA164E38823E9FD4F2F83F /* Person.h */,
-				2DBA10CBF425D169C10A7080 /* PersonCell.m */,
+				2DBA1984FF44F4C4BE82924A /* Person.m */,
 				2DBA1C8B9B3CAF5B1BBD75C0 /* PersonCell.h */,
+				2DBA10CBF425D169C10A7080 /* PersonCell.m */,
 			);
 			path = RealmCrash;
 			sourceTree = "<group>";

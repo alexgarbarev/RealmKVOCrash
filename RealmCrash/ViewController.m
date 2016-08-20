@@ -32,12 +32,20 @@
     [super viewDidLoad];
 
     [self setupRealm];
-
+    
     [self generateSampleData];
-
+    
     [self setupTableUI];
+    
+}
 
-    [self simulateFrequentlyBackgroundUpdates];
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    
+    [self simulateUpdateAndDeleteWhileMainThreadFrozen];
+    
 }
 
 - (void)setupRealm
@@ -45,7 +53,7 @@
     NSLog(@"DatabasePath: %@", [[RLMRealmConfiguration defaultConfiguration] fileURL] );
 
     [RLMRealmConfiguration defaultConfiguration].deleteRealmIfMigrationNeeded = YES;
-
+    
     NSLog(@"Configured realm: %@", [RLMRealm defaultRealm]);
 }
 
@@ -67,6 +75,7 @@
 
 - (void)setupTableUI
 {
+    
     _listData = [[Person allObjects] sortedResultsUsingProperty:@"identifier" ascending:YES];
 
     __weak __typeof (self.tableView) weakTableView = self.tableView;
@@ -96,64 +105,76 @@
     return [_listData count];
 }
 
-- (void)simulateFrequentlyBackgroundUpdates
+- (void)simulateUpdateAndDeleteWhileMainThreadFrozen
 {
-    NSOperationQueue *queue = [NSOperationQueue new];
-    queue.maxConcurrentOperationCount = 4;
-
-
-    for (int i = 0; i < 100; i++) {
-        __weak __typeof (self) weakSelf = self;
-        double delayInSeconds = 0.2 * i;
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [queue addOperationWithBlock:^{
-                [weakSelf runRandomChange];
-            }];
-        });
+    if (_listData.count == 0) {
+        return;
     }
+    
+    int firstIdentifier = _listData.firstObject.identifier;
+    NSInteger rowsInScreen = [self.tableView.indexPathsForVisibleRows count];
+
+
+    //Wait for all cells to be initialized and KVO-subscribed
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+       
+        // lock main thread, so RunLoop is paused while we doing background updates
+        [self freezeMainThreadFor:1];
+
+        NSMutableOrderedSet *identifiers = [NSMutableOrderedSet new];
+        
+        for (int i = firstIdentifier; i < firstIdentifier + rowsInScreen; i += 1) {
+            [identifiers addObject:@(i)];
+        }
+        
+        // Trigger KVO updates by updating names..
+        
+        for (NSNumber *identifier in identifiers) {
+            [[RLMRealm defaultRealm] transactionWithBlock:^{
+                Person *person = [Person objectForPrimaryKey:identifier];
+                if (person) {
+                    person.firstName = [MBFakerName firstName];
+                    person.lastName = [MBFakerName lastName];
+                }
+                [[RLMRealm defaultRealm] addOrUpdateObject:person];
+            }];
+        }
+        
+        
+        
+        // Delete all objects from above, so KVO observers gets invaldated object
+        for (NSNumber *identifier in identifiers) {
+            [[RLMRealm defaultRealm] transactionWithBlock:^{
+                Person *person = [Person objectForPrimaryKey:identifier];
+                if (person) {
+                    [[RLMRealm defaultRealm] deleteObject:person];
+                }
+            }];
+        }
+        
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self simulateUpdateAndDeleteWhileMainThreadFrozen];
+        });
+        
+    });
 }
 
-
-- (void)runRandomChange
+- (void)freezeMainThreadFor:(NSTimeInterval)timeInterval
 {
-    // Update existing persons
-    [[RLMRealm defaultRealm] transactionWithBlock:^{
-        int personsToUpdate = arc4random_uniform(20);
-        for (int i = 0; i < personsToUpdate; i += 1) {
-            Person *person = [Person objectForPrimaryKey:@(arc4random_uniform(200))];
-            if (person) {
-                person.firstName = [MBFakerName firstName];
-                person.lastName = [MBFakerName lastName];
-                NSLog(@"%d updated", person.identifier);
-            }
-        }
-    }];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        dispatch_semaphore_t sem = dispatch_semaphore_create(0);
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(timeInterval * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            dispatch_semaphore_signal(sem);
+        });
+        
+        dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+        [self.tableView reloadData];
+        [[RLMRealm defaultRealm] refresh];
+    
 
-    // Delete persons
-    [[RLMRealm defaultRealm] transactionWithBlock:^{
-        int personsToDelete = arc4random_uniform(20);
-        for (int i = 0; i < personsToDelete; i += 1) {
-            Person *person = [Person objectForPrimaryKey:@(arc4random_uniform(200))];
-            if (person) {
-                NSLog(@"will delete %d", person.identifier);
-                [[RLMRealm defaultRealm] deleteObject:person];
-            }
-        }
-    }];
-
-    // Insert or update persons
-    [[RLMRealm defaultRealm] transactionWithBlock:^{
-        int personsToAdd = arc4random_uniform(20);
-        for (int i = 0; i < personsToAdd; i += 1) {
-            Person *person = [Person new];
-            person.identifier = arc4random_uniform(200);
-            person.firstName = [MBFakerName firstName];
-            person.lastName = [MBFakerName lastName];
-            [[RLMRealm defaultRealm] addOrUpdateObject:person];
-            NSLog(@"%d added", person.identifier);
-        }
-    }];
+    });
 }
-
 
 @end
